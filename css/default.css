@@ -7,7 +7,7 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	background: #111111;
+	background: #695858;
 	font-family: 'Didact Gothic', sans-serif;
 	font-size: 12pt;
 	font-weight: 200;
@@ -61,7 +61,7 @@ a:hover
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
-
+/*
 .image
 {
 	display: inline-block;
@@ -96,7 +96,7 @@ a:hover
 {
 	margin: 0 auto;
 	width: auto;
-}
+}*/
 
 /*********************************************************************************/
 /* List Styles                                                                   */
@@ -108,11 +108,12 @@ ul.style1
 
 ul.actions
 {
+	width:300px;
 }
 
 ul.actions li
 {
-	
+	width:300px;
 }
 
 
@@ -167,7 +168,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 /*********************************************************************************/
 /* Button Style                                                                  */
 /*********************************************************************************/
-
+/*
 .button
 {
 	padding: 1em 2em 1em 2em;
@@ -181,7 +182,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	font-size: 1em;
 	color: #FFF;
 }
-/*
+
 .button-alt
 {
 	padding: 1em 2em;
@@ -270,6 +271,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 .title h2
 {
 	font-size: 2.7em;
+	text-align: center;
 }
 
 .title .byline
@@ -282,7 +284,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 /* Header                                                                        */
 /*********************************************************************************/
 
-#wrapper
+#wrapper2
 {
 	position: relative;
 	padding: 5em 0em 7em 0em;
@@ -292,13 +294,21 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
+/*url(../images/team3.jpg)*/
+#header-wrapper::before
+{
+	position: relative;
+	padding: 5em 0em 15em 30em;
+	background: url(../images/team3.jpg) no-repeat center;
+	background-size: cover;
+	
+	
+}
 
 #header-wrapper
 {
-	position: relative;
-	padding: 5em 0em 15em 0em;
-	background: #11111146 url(images/team2.jpg) no-repeat center;
-	background-size: cover;
+	background: rgba(0, 0, 0, 0.548);
+	padding-bottom: 25em;
 }
 
 #header
@@ -341,15 +351,17 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	justify-content:center;
 	flex-direction:column;
 	align-items: center;
-
-
 	padding-top: 10em;
 	
 }
 
 #banner .title h2
 {
+	display: flex;
 	font-size: 4em;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
 }
 
 #banner .title .byline
@@ -362,10 +374,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	display: flex;
 	justify-content:center;
 	align-items: center;
-
-
-
-	margin-top: 2em;
+	margin-top: 3em;
 	border: 2px solid rgba(255,255,255,1);
 	border-radius: 6px;
 	font-weight: 700;
@@ -374,55 +383,37 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 
 }
 
-.banner
-{
-	display:flex;
-	justify-content: center;
+
+#banner ul {
+	display: flex;
+	justify-content:center;
 	align-items: center;
-	margin-bottom: 5em;
 	
 }
 
 /********************** Button in the banner ********************/
 #btn_apply
 {
-	display:flex;
-
-
-	float: center;
-	min-width: 150px;
-	max-width: 250px;
-	display: inline-block;
-	margin: 1em;
-	padding: 1em 2em 1em 2em;
-	border: none;
-	background: none;
-	color: inherit;
-	vertical-align: middle;
 	position: relative;
-	z-index: 1;
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
-	color: #ECEFF1;
-	border-color: #ECEFF1;
 	border-radius: 6px;
 	align-items: center;
-}
-	
-#btn_apply {
-	padding: 0 2em;
-	background: #7986cb;
+	padding: 0 0em;
+	background: #e4e158;
 	color: #fff;
 	overflow: hidden;
 	-webkit-transition: background-color 0.3s;
 	transition: background-color 0.3s;
-	
 }
+
 #btn_apply.button--inverted {
 	background: #fff;
-	color: #7986cb;
+	color: #e4e158;
 }
+
 #btn_apply > span {
+	display: inline-block;
 	padding: 1em 0;
 	opacity: 0;
 	color: #fff;
@@ -433,11 +424,13 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
+
 #btn_apply::before {
 	content: attr(data-text);
 	position: absolute;
+	text-align: center;
+	color: #000;
 	top: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
 	padding: 1em 0;
@@ -464,6 +457,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	-webkit-transition-delay: 0.045s;
 	transition-delay: 0.045s;
 }
+
 .actions #btn_apply:hover > span:nth-child(2) {
 	-webkit-transition-delay: 0.09s;
 	transition-delay: 0.09s;
@@ -551,7 +545,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 {
 	position: relative;
 	padding: 7em 0em 7em 0em;
-	background: #3d3f15;
+	background: #1c1557;
 	background-size: cover;
 	text-align: center;
 }
@@ -560,7 +554,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 {
 	width: 1000px;
 	padding: 0px 100px;
-	color: rgba(255,255,255,0.8);
+	color: rgba(255, 255, 255, 0.8);
 }
 
 #welcome a

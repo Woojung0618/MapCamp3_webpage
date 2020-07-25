@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MadCamp</title>
+	<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+	<link href="/css/default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/menubar.css" rel="stylesheet" type="text/css" media="all" />
+
+	<link rel="stylesheet" href="/css/carousel.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="header-wrapper">
+		<header id="header" class="container">
+			<div id="logo">
+				<img src="images/logo.png">
+				<h1><a href="http://127.0.0.1:5500/index.html#">MadCamp(logo)</a></h1>
+			</div>
+
+			<div id="menu">
+				<li class="active"><a href="http://127.0.0.1:5500/index.html#" accesskey="1" title="">Main</a></li>
+
+				<li><a href="#" accesskey="2" title="">소개</a>
+					<ul class="dropdown">
+						<li><a href="http://127.0.0.1:5500/intro_main.html#">개요, 목적</a></li>
+						<li><a href="http://127.0.0.1:5500/intro_history.html#">역사</a></li>
+						<li><a href="http://127.0.0.1:5500/intro_people.html#">운영진</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#" accesskey="3" title="">게시판</a>
+					<ul class="dropdown">
+						<li><a href="http://127.0.0.1:5500/post_faq.html#">FAQ</a></li>
+						<li><a href="http://127.0.0.1:5500/post.html#">공지</a></li>
+					</ul>
+				</li>
+
+				<li><a href="http://127.0.0.1:5500/review.html#" accesskey="4" title="">후기</a></li>
+				<li><a href="http://127.0.0.1:5500/apply.html#" accesskey="5" title="">지원하기</a></li>
+
+			</div>
+		</header>
+
+		<div id="banner">
+			<div class="title">
+				<h2>몰입캠프</h2>
+				<span class="byline">어쩌구 저쩌구 영어로 있어보이는말, 뒤에 멋진 사진</span>
+			</div>
+			<ul class="actions">
+				<li><a href="http://127.0.0.1:5500/apply.html#" class="button" id="btn_apply" data-text="관심있어?">
+						<span>지</span><span>원</span><span>하</span><span>러</span><span>가</span><span>기</span>
+					</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<div class="slider-wrapper theme-default">
+			<div id="slider" class="nivoSlider">
+				<img src="images/team1.jpg" data-thumb="images/team1.jpg" alt="" />
+				<img src="images/team2.jpg" data-thumb="images/team2.jpg" alt="" data-transition="slideInLeft" />
+				<img src="images/team4.jpg" data-thumb="images/team4.jpg" alt="" />
+				<img src="images/team3.jpg" data-thumb="images/team3.jpg" alt="" title="#htmlcaption" />
+			</div>
+
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$('#slider').nivoSlider();
+		});
+	</script>
+
+	<div id="wrapper2">
+		<div id="three-column" class="container">
+			<div class="title">
+				<h2>성장을 향한 여정의 시작</h2>
+				<span class="byline">어쩌고 저쩌고 적어도되고 안적어도되고</span>
+			</div>
+			<div class="boxA">
+				<p>몰입/ 밑에 아이콘</p>
+
+			</div>
+			<div class="boxB">
+				<p>자율/ 밑에 아이콘</p>
+
+			</div>
+			<div class="boxC">
+				<p>성장/ 밑에 아이콘</p>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="welcome">
+		<div class="container">
+			<div class="title">
+				<h2>Fusce ultrices fringilla metus</h2>
+				<span class="byline">Donec leo, praesent a lacus at urna congue</span>
+			</div>
+			<p>여기에 후원업체, 전화번호, 주소 </p>
+
+		</div>
+	</div>
+	<div id="copyright" class="container">
+		<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Pixabay</a> | Design by <a
+				href="http://templated.co" rel="nofollow">madcamp</a>.</p>
+	</div>
+
+
+
+</body>
+
+</html>
