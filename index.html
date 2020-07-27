@@ -1,7 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MadCamp</title>
+	<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+	<link href="/css/default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/menu1.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="/css/carousel.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/nivo-slider.css" type="text/css" media="screen" />
+</head>
+
+<header id="header" class="container">
+	<div id="logo">
+		<a href="http://127.0.0.1:5500/index.html#"><img src="images/logo.png"></a>
+	</div>
+	<div id="menubar">
+		<ul id="main-menu">
+			<li><a href="http://127.0.0.1:5500/index.html##">MAIN</a></li>
+			<li><a href="http://127.0.0.1:5500/intro.html##">INTRODUCE</a>
+				<ul id="sub-menu">
+					<li><a href="http://127.0.0.1:5500/intro_main.html#" aria-label="submenu">개요,목적</a></li>
+					<li><a href="http://127.0.0.1:5500/intro_history.html#" aria-label="submenu">history</a>
+					</li>
+					<li><a href="#" aria-label="submenu">people</a></li>
+				</ul>
+			</li>
+			<li><a href="">POSTS</a>
+				<ul id="sub-menu">
+					<li><a href="http://127.0.0.1:5500/post_faq.html#" aria-label="submenu">FAQ</a></li>
+					<li><a href="http://127.0.0.1:5500/post.html#" aria-label="submenu">공지</a></li>
+				</ul>
+			</li>
+			<li><a href="http://127.0.0.1:5500/review.html#">REVIEW</a>
+			</li>
+			<li><a href="http://127.0.0.1:5500/apply.html#">APPLY</a></li>
+		</ul>
+	</div>
+</header>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<div id="header-wrapper">
+
+		<div id="banner">
+			<div class="title">
+				<h2>몰입캠프</h2>
+				<span class="byline">어쩌구 저쩌구 영어로 있어보이는말, 뒤에 멋진 사진</span>
+			</div>
+			<ul class="actions">
+				<li><a href="http://127.0.0.1:5500/apply.html#" class="button" id="btn_apply" data-text="관심있어?">
+						<span>지</span><span>원</span><span>하</span><span>러</span><span>가</span><span>기</span>
+					</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<div id="main-ment">
+			<img src="images/left.png">
+			<p>몰입캠프 Since 2010</p>
+			<img src="images/right.png">
+		</div>
+		<div class="slider-wrapper theme-default">
+			<div id="slider" class="nivoSlider">
+				<img src="images/pic2.jpg" data-thumb="images/pic2.jpg" alt="" />
+				<img src="images/pic4.jpg" data-thumb="images/pic4.jpg" alt="" />
+				<img src="images/pic3.jpg" data-thumb="images/pic3.jpg" alt="" />
+				<img src="images/pic1.jpg" data-thumb="images/pic1.jpg" alt="" />
+
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$('#slider').nivoSlider();
+		});
+	</script>
+
+	<div id="wrapper2">
+		<div id="three-column" class="container">
+			<div class="title">
+				<h2>성장을 향한 여정의 시작</h2>
+			</div>
+			<div id="box3">
+				<div class="boxA">
+					<h3>자율</h3>
+					<img src="images/molip.png">
+					<p>자율적인 개발경험을 쌓으세요!</p>
+				</div>
+				<div class="boxB">
+					<h3>협력</h3>
+					<img src="images/cooperate.png">
+					<p>다양한 사람들과 함께 협력하세요!</p>
+				</div>
+				<div class="boxC">
+					<h3>성장</h3>
+					<img src="images/graph.png">
+					<p>집중적으로 코딩하면서 개발실력을 향상시키세요!</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
+<footer>
+	<div id="welcome">
+		<div class="container" id="foot1">
+			<p>후원업체</p>
+			<img src="images/bonangels.png">
+			<p>스타트업 초기 투자 전문 벤처캐피털</p>
+
+			<img src="images/join1.png">
+			<p>커리어 성장관리 솔루션</p>
+		</div>
+		<div class="container" id="foot2">
+			<p>위치 : 대전 유성구 카이스트 본원 N1 </p>
+			<p>행정실 전화번호 : 02-12340-5678</p>
+			<p>행정실 이메일 : @gmail.com</p>
+		</div>
+		
+	
+	</div>
+	<div id="copyright" class="container">
+		<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Pixabay</a> | Design by <a
+				href="http://templated.co" rel="nofollow">madcamp</a>.</p>
+	</div>
+</footer>
+
 </html>

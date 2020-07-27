@@ -1,0 +1,77 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #fffffffa;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 12pt;
+	font-weight: 200;
+	color: rgb(0, 0, 0);
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+p
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	margin-top: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a
+{
+	color: #ee0000;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+/*********************************************************************************/
+/* Header & Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+	position: absolute;
+	top: 3.6em;
+	left: 5em;
+	
+}
+#logo img
+{
+	width: auto; height: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#logo a
+{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+
+
+#header
+{
+	position: relative;
+	padding: 5em 6em 10em 5em;
+    
+    background-color: #220d49fa;
+}

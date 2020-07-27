@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#menubar{
+    color:rgb(152, 130, 177);
+}
+#main-menu {
+    display: flex;
+    float: right;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #main-menu > li {
+    float: left;
+    position: relative;
+  }
+  
+  #main-menu > li > a {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.85);
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    display: block;
+    padding: 14px 36px;
+    border-right: 1px solid rgba(0,0,0,0.15);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  }
+  
+  #main-menu > li:nth-child(1) > a {
+    border-left: 1px solid rgba(0,0,0,0.15);
+  }
+  
+  #sub-menu {
+    position: absolute;
+    background: #182952;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ease-in;
+  }
+  
+  #sub-menu > li {
+    padding: 5px 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+  }
+  
+  #sub-menu > li >  a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+  }
+  
+  #main-menu > li:hover #sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+ 
+
+  
+  #sub-menu > li >  a:hover {
+   
+   color: aliceblue;
+  }
+  /*
+  section {
+    column-width: 15em;
+    background: #ffffff;
+    padding: 2em 12em;
+  }
+/*
+#cssmenu {
+    display: flex;
+    float: right;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#cssmenu > li {
+  float: left;
+  position: relative;
+}
+
+#cssmenu > li > a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 14px 36px;
+  border-right: 1px solid rgba(0,0,0,0.15);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#cssmenu > li:nth-child(1) > a {
+  border-left: 1px solid rgba(0,0,0,0.15);
+}
+
+#submenu {
+  position: absolute;
+  background: #182952;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+}
+
+#submenu > li {
+  padding: 16px 28px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+#submenu > li >  a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+
+#cssmenu > li:hover #sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#submenu > li > a:hover {
+ text-decoration: underline;
+}
+
+*/
