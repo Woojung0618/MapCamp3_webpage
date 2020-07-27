@@ -7,44 +7,41 @@
 	<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
 	<link href="/css/default.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/css/menubar.css" rel="stylesheet" type="text/css" media="all" />
-
+	<link href="/css/menu1.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" href="/css/carousel.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="/css/nivo-slider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
 </head>
+
+<header id="header" class="container">
+	<div id="logo">
+		<a href="http://127.0.0.1:5500/index.html#"><img src="images/logo.png"></a>
+	</div>
+	<div id="menubar">
+		<ul id="main-menu">
+			<li><a href="http://127.0.0.1:5500/index.html##">MAIN</a></li>
+			<li><a href="http://127.0.0.1:5500/intro.html##">INTRODUCE</a>
+				<ul id="sub-menu">
+					<li><a href="http://127.0.0.1:5500/intro_main.html#" aria-label="submenu">개요,목적</a></li>
+					<li><a href="http://127.0.0.1:5500/intro_history.html#" aria-label="submenu">history</a>
+					</li>
+					<li><a href="#" aria-label="submenu">people</a></li>
+				</ul>
+			</li>
+			<li><a href="">POSTS</a>
+				<ul id="sub-menu">
+					<li><a href="http://127.0.0.1:5500/post_faq.html#" aria-label="submenu">FAQ</a></li>
+					<li><a href="http://127.0.0.1:5500/post.html#" aria-label="submenu">공지</a></li>
+				</ul>
+			</li>
+			<li><a href="http://127.0.0.1:5500/review.html#">REVIEW</a>
+			</li>
+			<li><a href="http://127.0.0.1:5500/apply.html#">APPLY</a></li>
+		</ul>
+	</div>
+</header>
 
 <body>
 	<div id="header-wrapper">
-		<header id="header" class="container">
-			<div id="logo">
-				<img src="images/logo.png">
-				<h1><a href="http://127.0.0.1:5500/index.html#">MadCamp(logo)</a></h1>
-			</div>
-
-			<div id="menu">
-				<li class="active"><a href="http://127.0.0.1:5500/index.html#" accesskey="1" title="">Main</a></li>
-
-				<li><a href="#" accesskey="2" title="">소개</a>
-					<ul class="dropdown">
-						<li><a href="http://127.0.0.1:5500/intro_main.html#">개요, 목적</a></li>
-						<li><a href="http://127.0.0.1:5500/intro_history.html#">역사</a></li>
-						<li><a href="http://127.0.0.1:5500/intro_people.html#">운영진</a></li>
-					</ul>
-				</li>
-
-				<li><a href="#" accesskey="3" title="">게시판</a>
-					<ul class="dropdown">
-						<li><a href="http://127.0.0.1:5500/post_faq.html#">FAQ</a></li>
-						<li><a href="http://127.0.0.1:5500/post.html#">공지</a></li>
-					</ul>
-				</li>
-
-				<li><a href="http://127.0.0.1:5500/review.html#" accesskey="4" title="">후기</a></li>
-				<li><a href="http://127.0.0.1:5500/apply.html#" accesskey="5" title="">지원하기</a></li>
-
-			</div>
-		</header>
 
 		<div id="banner">
 			<div class="title">
@@ -60,14 +57,19 @@
 	</div>
 
 	<div id="wrapper">
+		<div id="main-ment">
+			<img src="images/left.png">
+			<p>몰입캠프 Since 2010</p>
+			<img src="images/right.png">
+		</div>
 		<div class="slider-wrapper theme-default">
 			<div id="slider" class="nivoSlider">
-				<img src="images/team1.jpg" data-thumb="images/team1.jpg" alt="" />
-				<img src="images/team2.jpg" data-thumb="images/team2.jpg" alt="" data-transition="slideInLeft" />
-				<img src="images/team4.jpg" data-thumb="images/team4.jpg" alt="" />
-				<img src="images/team3.jpg" data-thumb="images/team3.jpg" alt="" title="#htmlcaption" />
-			</div>
+				<img src="images/pic2.jpg" data-thumb="images/pic2.jpg" alt="" />
+				<img src="images/pic4.jpg" data-thumb="images/pic4.jpg" alt="" />
+				<img src="images/pic3.jpg" data-thumb="images/pic3.jpg" alt="" />
+				<img src="images/pic1.jpg" data-thumb="images/pic1.jpg" alt="" />
 
+			</div>
 		</div>
 
 	</div>
@@ -83,40 +85,50 @@
 		<div id="three-column" class="container">
 			<div class="title">
 				<h2>성장을 향한 여정의 시작</h2>
-				<span class="byline">어쩌고 저쩌고 적어도되고 안적어도되고</span>
 			</div>
-			<div class="boxA">
-				<p>몰입/ 밑에 아이콘</p>
-
-			</div>
-			<div class="boxB">
-				<p>자율/ 밑에 아이콘</p>
-
-			</div>
-			<div class="boxC">
-				<p>성장/ 밑에 아이콘</p>
-
+			<div id="box3">
+				<div class="boxA">
+					<h3>자율</h3>
+					<img src="images/molip.png">
+					<p>자율적인 개발경험을 쌓으세요!</p>
+				</div>
+				<div class="boxB">
+					<h3>협력</h3>
+					<img src="images/cooperate.png">
+					<p>다양한 사람들과 함께 협력하세요!</p>
+				</div>
+				<div class="boxC">
+					<h3>성장</h3>
+					<img src="images/graph.png">
+					<p>집중적으로 코딩하면서 개발실력을 향상시키세요!</p>
+				</div>
 			</div>
 		</div>
 	</div>
+</body>
 
+<footer>
 	<div id="welcome">
-		<div class="container">
-			<div class="title">
-				<h2>Fusce ultrices fringilla metus</h2>
-				<span class="byline">Donec leo, praesent a lacus at urna congue</span>
-			</div>
-			<p>여기에 후원업체, 전화번호, 주소 </p>
+		<div class="container" id="foot1">
+			<p>후원업체</p>
+			<img src="images/bonangels.png">
+			<p>스타트업 초기 투자 전문 벤처캐피털</p>
 
+			<img src="images/join1.png">
+			<p>커리어 성장관리 솔루션</p>
 		</div>
+		<div class="container" id="foot2">
+			<p>위치 : 대전 유성구 카이스트 본원 N1 </p>
+			<p>행정실 전화번호 : 02-12340-5678</p>
+			<p>행정실 이메일 : @gmail.com</p>
+		</div>
+		
+	
 	</div>
 	<div id="copyright" class="container">
 		<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Pixabay</a> | Design by <a
 				href="http://templated.co" rel="nofollow">madcamp</a>.</p>
 	</div>
-
-
-
-</body>
+</footer>
 
 </html>

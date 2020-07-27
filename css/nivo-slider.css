@@ -10,16 +10,15 @@
 /* The Nivo Slider styles */
 .nivoSlider {
 	position:relative;
-	width:100%;
-	height:auto;
+	width:80%;
+    height:auto;
 	overflow: hidden;
 }
 .nivoSlider img {
+
 	position:absolute;
-	top:0px;
-	left:0px;
     max-width: none;
-    max-height: 100ex;
+    max-height: 100ex; /* 높이 일정 */
 }
 .nivo-main-image {
 	display: block !important;
@@ -111,4 +110,14 @@
 }
 .nivo-controlNav a.active {
 	font-weight:bold;
+}
+
+/* slide 하단의 점들 */
+
+.slider-wrapper { 
+	width: 50%; 
+    margin: 80px auto;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
 }

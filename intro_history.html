@@ -1,53 +1,108 @@
 <!DOCTYPE html>
-<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title></title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
-	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-	<link href="/css/default.css" rel="stylesheet" type="text/css" media="all" />
-	<!--	<link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all" />-->
-	<link href="/css/menubar.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/css/maincarousel.css" rel="stylesheet" type="text/css" media="all" />
-	
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MadCamp</title>
+    <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+    <link href="/css/default2.css" rel="stylesheet" type="text/css" media="all" />
+   	<link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/menu1.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="/js/modernizr.custom.79639.js"></script>
+    <link href="/css/history.css" rel="stylesheet" type="text/css" media="all" /> 
+    <script type="text/javascript" src="js/history.js" type="text/css" media="all"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    
 
 </head>
+
+<header id="header" class="container">
+    <div id="logo">
+        <a href="http://127.0.0.1:5500/index.html#"><img src="images/logo.png"></a>
+    </div>
+    <div id="menubar">
+        <ul id="main-menu">
+            <li><a href="http://127.0.0.1:5500/index.html#">MAIN</a></li>
+            <li><a href="http://127.0.0.1:5500/intro.html#">INTRODUCE</a>
+                <ul id="sub-menu">
+                    <li><a href="http://127.0.0.1:5500/intro_main.html#" aria-label="submenu">개요,목적</a></li>
+                    <li><a href="http://127.0.0.1:5500/intro_history.html#" aria-label="submenu">history</a></li>
+                    <li><a href="#" aria-label="submenu">people</a></li>
+                </ul>
+            </li>
+            <li><a href="">POSTS</a>
+                <ul id="sub-menu">
+                    <li><a href="http://127.0.0.1:5500/post_faq.html#" aria-label="submenu">FAQ</a></li>
+                    <li><a href="http://127.0.0.1:5500/post.html#" aria-label="submenu">공지</a></li>
+                </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5500/review.html#">REVIEW</a>
+            </li>
+            <li><a href="http://127.0.0.1:5500/apply.html#">APPLY</a></li>
+        </ul>
+    </div>
+</header>
+
 <body>
+    <html lang="en">
 
-    <header id="header" class="container">
-        <div id="logo">
-            <h1><a href="#">MadCamp</a></h1>
-        </div>
-
-        <div id="menu">
-            <li class="active"><a href="http://127.0.0.1:5500/index.html#" accesskey="1" title="">Main</a></li>
-
-            <li><a href="#" accesskey="2" title="">소개</a>
-                <ul class="dropdown">
-                    <li><a href="http://127.0.0.1:5500/intro_main.html#">개요, 목적</a></li>
-                    <li><a href="http://127.0.0.1:5500/intro_history.html#">역사</a></li>
-                    <li><a href="http://127.0.0.1:5500/intro_people.html#">운영진</a></li>
-                </ul>
-            </li>
-
-            <li><a href="#" accesskey="3" title="">게시판</a>
-                <ul class="dropdown">
-                    <li><a href="http://127.0.0.1:5500/post_faq.html#">FAQ</a></li>
-                    <li><a href="http://127.0.0.1:5500/post.html#">공지</a></li>
-                </ul>
-            </li>
-
-            <li><a href="http://127.0.0.1:5500/review.html#" accesskey="4" title="">후기</a></li>
-            <li><a href="http://127.0.0.1:5500/apply.html#" accesskey="5" title="">지원하기</a></li>
-
-        </div>
-    </header>
-
+        <head>
+          <meta charset="UTF-8" />
+          <title>An Animated Timeline</title>
+          <meta name="viewport" content="width=device-width">
+        </head>
+        
+        <body>
+          <header>
+            <div class="poster">
+              <h1 class="poster__heading">The North Pole 2015 
+                  <span class="poster__subheading">The Ultimate Artic Adventure</span>
+                 <a href="#" class="btn--primary">Book Request</a>
+              </div>
+            </div>
+          </header>
+          <main class="timeline-wrapper">
+            <div class="svg-timeline">
+              <svg width="8px" height="1490.7px" viewBox="0 0 8 1490.7">
+                <line id="timeline" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" x1="4" y1="0" x2="4" y2="1490.7"/>
+              </svg>
+            </div>
+            <ol class="timeline clearfix">
+              <li class="timeline__item">
+                <h3 class="timeline__day">Day 1: <span>Helsinki, Finland</span></h3>
+                <p class="timeline__day-sum">Your adventure begins with a one-night stay in Helsinki, Finland's capital.</p>
+                <a href="#" class="btn--comments">19 Comments</a>
+              </li>
+              <li class="timeline__item right">
+                <h3 class="timeline__day dayTwo">Day 2: <span>Embarkation Day in Murmansk</span></h3>
+                <p class="timeline__day-sum">From Helsinki, your charter flight will take you to Murmansk, Russia, where you'll embark on your voyage to the North Pole and get acquainted with 50 Years of Victory, the world's largest and most powerful icebreaker.</p>
+                <a href="#" class="btn--comments">35 Comments</a>
+              </li>
+              <li class="timeline__item">
+                <h3 class="timeline__day dayThree">Day 3-6: <span>Northbound in the Arctic Ocean</span></h3>
+                <p class="timeline__day-sum">Watching the ship crush through the Arctic ice pack is a sight you'll never forget, made even more memorable by taking a helicopter flight for a thrilling aerial view of the ship and expansive Arctic Ocean.</p>
+                <p class="timeline__day-sum">You can expect days, and hours,to present variable sailing conditions this far north. The crossing from Murmansk to the North Pole can take us anywhere from 5-8 days. This means you'll have plenty of time to get to know your shipmates, stare out at the horizon, grab some drinks at the bar or do some laps in our indoor pool.</p>
+                <a href="#" class="btn--comments">72 Comments</a>
+              </li>
+              <li class="timeline__item right">
+                <h3 class="timeline__day dayFour">Day 7: <span>90&deg; North</span></h3>
+                <p class="timeline__day-sum">All of the anticipation of the past few days reaches a climax as you reach the North Pole! Many travelers find themselves overcome with emotion, while others are in a festive mood. Take photos, wave a flag, enjoy your moment! Later, everyone enjoys a champagne toast and a BBQ on the ice. Add an exclamation to your success by rising high in one of our hot air balloons to commemerate this great moment.</p>
+                <a href="#" class="btn--comments">132 Comments</a>
+              </li>
+              <li class="timeline__item">
+                <h3 class="timeline__day dayFive">Day 8: <span>Southbound in the Arctic Ocean</span></h3>
+                <p class="timeline__day-sum">Now you can sit back and relax, everything from here on out is a bonus! Expect more great memories as you head south, you may get lucky and spot a Polar Bear hunting a Seal.</p>
+                <a href="#" class="btn--comments">2 Comments</a>
+              </li>
+              <li class="timeline__item right">
+                <h3 class="timeline__day daySix">Day 9-10: <span>Franz Josef Land</span></h3>
+                <p class="timeline__day-sum">Now you can sit back and relax, everything from here on out is a bonus! Expect more great memories as you head south, you may get lucky and spot a Polar Bear hunting a Seal.</p>
+                <a href="#" class="btn--comments">12 Comments</a>
+              </li>
+            </ol>
+          </main>
+        </body>
+        </html>
 </body>
 
 </html>
