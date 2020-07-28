@@ -1,0 +1,142 @@
+/* top banner */
+p {
+    font-size: 20px;
+    padding: 0;
+    margin:0;
+}
+.apply-top-container {
+    width: 100%;
+    position: relative;
+    padding: 20em 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../images/together1.jpg");
+  }
+  .apply-top-container:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 43, 82, 0.575);
+    content: "";
+  }
+  .apply-header {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 80px;
+    padding-left: 20em;
+    position: relative;
+  }
+  .apply-header-title {
+    color: rgb(253, 253, 253);
+    font-size: 80px;
+    text-shadow: 6px 2px 6px  black;
+    font-weight: 900;
+    margin-top: 1em;
+  }
+.apply-container-title{
+    text-align: center;
+    padding: 3em;
+    background-color: rgba(197, 197, 197, 0.39);
+}
+
+/* container */
+
+.apply-container {
+    
+    background-color: rgba(153, 107, 228, 0.178);
+    padding: 1em;
+    display: flex;
+    margin:2em auto;
+    width:1300px;
+    z-index:2;
+    
+}
+
+.guide_table {
+    margin: 0 2em;
+    z-index:2;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+}
+.item .list-1 {
+    width: 150px;
+    padding: 3em 2em;
+    margin-right: 3em;
+    border-top: 1px solid purple;
+}
+.item .list-2 {
+    width: 800px;
+    padding: 3em 4em;
+    border-top: 1px solid gray;
+    font-size: 20px;
+}
+.item .list-3 {
+    display: flex;
+    flex-direction: row;
+    
+}
+.item .list-3 li {
+    margin-right: 3em;
+    text-align: center;
+}
+.item .list-3 p {
+    text-align: center;
+}
+.first {
+    margin-bottom: 1em;
+    border: 1.5px solid purple;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: rgba(253, 253, 253, 0.534);
+    width: auto;
+    max-width: max-content;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    float: center;
+    margin:10px auto;
+}
+
+/* background image */
+.back {
+    height: 200000px;
+}
+#back-image {
+    background-image: url(../images/back1.PNG);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    z-index:1;
+    background-position: 10% 300px;
+}
+#back-image2 {
+    background-image: url(../images/back2.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    height: 200%;
+    width: 100%;
+    z-index:1;
+    background-position: 90% 800px;
+}
+#back-image3 {
+    background-image: url(../images/back3.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    height: 200%;
+    width: 100%;
+    z-index:1;
+    background-position: 10% 1400px;
+}

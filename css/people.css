@@ -55,15 +55,15 @@ body {
 
 .side-left {
 	left: 0;
-	background: rgb(74,33,163);
-background: linear-gradient(90deg, rgba(74,33,163,1) 0%, rgba(153,30,193,1) 100%);
+	background: rgb(139,196,222);
+background: linear-gradient(39deg, rgba(139,196,222,1) 0%, rgba(218,214,147,1) 100%);
 	outline: 0px; /* avoid gap */
 }
 
 .side-right {
 	right: 0;
-	background: rgb(163,146,33);
-background: linear-gradient(270deg, rgba(163,146,33,1) 0%, rgba(153,30,193,1) 100%);
+	background: rgb(222,211,139);
+background: linear-gradient(39deg, rgba(222,211,139,1) 0%, rgba(213,141,236,1) 100%);
 color: #fff;
 	outline: 0px solid #fff; /* avoid gap */
 }
@@ -632,3 +632,6 @@ a:hover {
 @media screen and (max-height: 30.25em) {
 	.codropsheader nav { display: none; }
 }
+
+
+
