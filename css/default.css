@@ -32,7 +32,7 @@ ul {
 }
 
 a {
-  color: #ee0000;
+  color: purple;
 }
 
 a:hover {
@@ -322,7 +322,7 @@ a:hover {
 #main-ment {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-left: 40px;
   padding-top: 7em;
 }
 
@@ -337,7 +337,126 @@ a:hover {
 /*********************************************************************************/
 /* 3 Icons                                                                     */
 /*********************************************************************************/
+.blockquote-wrapper {
+  display: flex;
+  width: 200px;
+}
 
+/* Blockquote main style */
+.blockquote {
+  position: relative;
+  font-family: "Barlow Condensed", sans-serif;
+  width: 300px;
+
+  align-self: center;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+  position: relative; /* for pseudos */
+  color: #fff;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  border: 2px solid #fff;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 50px;
+  width: 300px;
+}
+
+/* Blockquote right double quotes */
+.blockquote h1:after {
+  content: "";
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 0 50px 0 0;
+  width: 160px;
+  height: 60px;
+  bottom: -62px;
+  left: 100px;
+  border-bottom: none;
+  border-left: none;
+  z-index: 3;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+  .blockquote h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}
+.a {
+  font-size: 30px;
+}
+
+/*빛나는 사각형*/
+.sub11 {
+  position: absolute;
+  left: 50px;
+  top: 1200px;
+  width: 400px;
+  height: 400px;
+  background: rgb(241, 231, 254, 0.5);
+  box-sizing: border-box;
+}
+.sub12 {
+  position: absolute;
+  left: 650px;
+  top: 1600px;
+  width: 250px;
+  height: 250px;
+  background: rgb(241, 231, 254, 1);
+  box-sizing: border-box;
+}
+.sub13 {
+  position: absolute;
+  left: 850px;
+  top: 1550px;
+  width: 150px;
+  height: 150px;
+  background: rgb(81, 45, 117);
+  box-sizing: border-box;
+}
+/* Blockquote subheader */
+.blockquote h4 {
+  position: relative;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 1;
+  margin-left: 100px;
+  padding-left: 12px;
+}
+
+.blockquote h4:first-letter {
+  margin-left: -12px;
+}
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+}
+#left {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+}
+
+#right {
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  padding-left: 250px;
+  width: 600px;
+}
 #wrapper2 {
   position: relative;
   padding: 5em 0em 10em 0em;
