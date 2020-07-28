@@ -226,15 +226,17 @@ section .content a {
 }
 
 .chatbot {
-  padding-left: 100px;
+  
   display: flex;
   flex-direction: column;
 }
 .box {
   background-color: rgba(242, 241, 239, 0.6);
-  margin-left: 200px;
+  margin: 0 auto;
   height: 700px;
   width: 600px;
+  padding-bottom: 2em;
+  
 }
 
 #chatLog {

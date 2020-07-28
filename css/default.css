@@ -18,6 +18,7 @@ h2,
 h3 {
   margin: 0;
   padding: 0;
+ 
 }
 
 p {
@@ -48,20 +49,20 @@ a:hover {
 .box3,
 .box4
 {
-	width: 235px;
+   width: 235px;
 }
 
 .box1,
 .box2,
 .box3
 {
-	float: left;
-	margin-right: 20px;
+   float: left;
+   margin-right: 20px;
 }
 
 .box4
 {
-	float: right;
+   float: right;
 }
 */
 /*********************************************************************************/
@@ -94,17 +95,17 @@ a:hover {
 .tbox1,
 .tbox2
 {
-	width: 575px;
+   width: 575px;
 }
 
 .tbox1
 {
-	float: left;
+   float: left;
 }
 
 .tbox2
 {
-	float: right;
+   float: right;
 }
 
 
@@ -141,44 +142,27 @@ a:hover {
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
-/*url(../images/team3.jpg)*/
+
 #header-wrapper::before {
-  position: relative;
-  padding: 5em 0em 15em 30em;
-  background: url(../images/team3.jpg) no-repeat center;
-  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  content: "";
+  z-index:1;
 }
 
 #header-wrapper {
-  background: rgba(0, 0, 0, 0.548);
+  background: url(../images/main1.jpg) no-repeat center;
+  background-size: cover;
   padding-bottom: 25em;
+  z-index:1;
 }
 
 #header {
   position: relative;
   padding: 5em 0em;
   margin: 0 5em 5em 5em;
-}
-
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
-
-#logo {
-  position: absolute;
-  top: 3.6em;
-  left: 0;
-}
-#logo img {
-  width: auto;
-  height: auto;
-  max-width: 100px;
-  max-height: 100px;
-}
-
-#logo a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 1);
 }
 
 /*********************************************************************************/
@@ -191,6 +175,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 10em;
+
 }
 
 #banner .title h2 {
@@ -199,10 +184,12 @@ a:hover {
   justify-content: center;
   text-align: center;
   align-items: center;
+ 
 }
 
 #banner .title .byline {
   font-size: 2em;
+  
 }
 
 #banner .button {
@@ -215,12 +202,17 @@ a:hover {
   font-weight: 700;
   font-size: 1.3rem;
   width: 100%;
+  z-index:2;
 }
 
 #banner ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+.title {
+	z-index:2;
 }
 
 /********************** Button in the banner ********************/
@@ -276,7 +268,7 @@ a:hover {
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
 #btn_apply:hover {
-  background-color: #1c1488;
+  background-color: #331488;
 }
 
 #btn_apply:hover::before {
@@ -314,7 +306,26 @@ a:hover {
   -webkit-transition-delay: 0.27s;
   transition-delay: 0.27s;
 }
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
 
+#logo {
+	position: absolute;
+	top: 3.6em;
+	left: 0;
+  }
+  #logo img {
+	width: auto;
+	height: auto;
+	max-width: 100px;
+	max-height: 100px;
+  }
+  
+  #logo a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 1);
+  }
 /*********************************************************************************/
 /* Image Slide ment                                                                    */
 /*********************************************************************************/
@@ -513,7 +524,7 @@ a:hover {
 
 #welcome {
   position: relative;
-  padding: 7em 0em 7em 0em;
+  padding: 3em 0em;
   background: #220d49fa;
   display: flex;
   flex-direction: row;
@@ -528,18 +539,20 @@ a:hover {
   flex-wrap: wrap;
   width: auto;
   max-width: 400px;
-  padding: 0px 10px;
+  padding-left: 10em;
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
-  margin: 0em 20%;
+  margin: 0em auto;
+
 }
 #foot2 {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  padding-right:15em;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0em 10%;
+  margin: 0em auto;
+  position: relative;
+ 
 }
 
 #welcome a {

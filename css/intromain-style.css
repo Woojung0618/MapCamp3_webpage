@@ -90,6 +90,9 @@
   font-size: 15pt;
   padding: 1em;
 }
+#why-detail2 h2, #why-detail2 p{
+  text-align: right;
+}
 
 /* Last 마지막 문구 */
 .quotes {
@@ -285,3 +288,4 @@
   font-weight: bold;
   margin-top: 1em;
 }
+
