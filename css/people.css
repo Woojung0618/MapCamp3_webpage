@@ -55,16 +55,17 @@ body {
 
 .side-left {
 	left: 0;
-	background: rgb(139,196,222);
-background: linear-gradient(39deg, rgba(139,196,222,1) 0%, rgba(218,214,147,1) 100%);
+	background: rgb(227,233,246);
+	background: linear-gradient(0deg, rgba(227,233,246,1) 0%, rgba(145,175,212,1) 100%);
+	color:#000;
 	outline: 0px; /* avoid gap */
 }
 
 .side-right {
 	right: 0;
-	background: rgb(222,211,139);
-background: linear-gradient(39deg, rgba(222,211,139,1) 0%, rgba(213,141,236,1) 100%);
-color: #fff;
+	background: rgb(220,203,224);
+background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 100%);
+	color: #fff;
 	outline: 0px solid #fff; /* avoid gap */
 }
 
