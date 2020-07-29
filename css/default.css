@@ -1,9 +1,8 @@
 @font-face {
-    font-family: "font1"; 
-	src: url("../font/font1.TTF"); 
+    font-family: "fontjs"; 
+	src: url("../font/fontjs1.ttf"); 
 	
 }
-
 html,
 body {
   height: 100%;
@@ -24,12 +23,12 @@ h2,
 h3 {
   margin: 0;
   padding: 0;
-  font-family: "font1";
+  font-family: "fontjs"; 
 }
 
 p {
   margin-top: 0;
-  font-family: "font1";
+  font-family: "fontjs"; 
 }
 
 ol,
@@ -41,7 +40,7 @@ ul {
 
 a {
   color: purple;
-  font-family: "font1";
+  font-family: "fontjs"; 
 }
 
 a:hover {
@@ -125,7 +124,7 @@ a:hover {
   margin-bottom: 3em;
   text-align: center;
   font-size:1.3em;
-  
+  font-family: "fontjs"; 
 }
 
 .title h2 {
@@ -133,18 +132,20 @@ a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-
+  font-family: "fontjs"; 
 }
 .banner-title {
 	text-shadow: 4px 2px 6px black;
+	
 }
 .byline {
 	text-shadow: 4px 2px 6px black;
+	font-family: "fontjs"; 
 }
 .title .byline {
   font-size: 1.4em;
   color: rgba(255, 255, 255, 0.6);
-  font-family: "font1";
+  font-family: "fontjs"; 
 }
 
 /*********************************************************************************/
@@ -506,7 +507,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "font1";
+  font-family: "fontjs"; 
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -516,7 +517,7 @@ a:hover {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  font-family: "font1";
+  font-family: "fontjs"; 
 }
 
 #three-column img {
@@ -528,7 +529,7 @@ a:hover {
   color: rgba(0, 0, 0, 0.8);
   font-size: 15px;
   margin-top: 20px;
-  font-family: "font1";
+  font-family: "fontjs"; 
 }
 
 #three-column img {
@@ -548,10 +549,10 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: "font2";
+  
 }
 #welcome p{
-	font-family: "font1";
+	
 }
 
 #foot1 {
@@ -566,7 +567,7 @@ a:hover {
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
   margin: 0em auto;
-  font-family: "font2";
+ 
 }
 #foot2 {
   display: flex;
@@ -575,7 +576,7 @@ a:hover {
   flex-wrap: wrap;
   margin: 0em auto;
   position: relative;
-  font-family: "font2";
+  
 }
 
 #welcome a {
