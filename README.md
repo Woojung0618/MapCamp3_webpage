@@ -1,34 +1,20 @@
-# ScrollOut
+# 몰입캠프 WEB
 
-*Animate on Scroll*
+## 몰입캠프 소개 WEB
 
-[![npm version](https://badge.fury.io/js/scroll-out.svg)](https://badge.fury.io/js/scroll-out) [![Downloads](https://img.shields.io/npm/dm/scroll-out.svg)](https://www.npmjs.com/package/scroll-out)
-[![gzip size](http://img.badgesize.io/https://unpkg.com/scroll-out/dist/scroll-out.min.js?compression=gzip&label=gzip%20size&style=flat&cache=false)](https://unpkg.com/scroll-out/dist/scroll-out.min.js) 
-
-## Why should I use this?
-- Animate or reveal elements as they scroll into view using CSS or JavaScript
-- Super tiny JavaScript library at 1KB minified and gzipped.
-- Free for commercial and non-commercial use under the MIT license.
-
-## How do I use it?
-
-Install ScrollOut and decorate elements with the ```data-scroll``` attribute.  As elements become visible, ```data-scroll``` will be set to ```in``` and when elements are scrolled out they will be set with ```out```.  Add your own CSS or JS to make a big impression when things come into view.  That's it!
-
-## Getting Started
-
-Check out the [documentation](https://scroll-out.github.io/).
-
-## Compatibility
-
-The core features are compatible on all modern desktop and mobile browsers.  Internet Explorer 11 is also supported.
-
-## Maintainers
-
-| Maintainer | GitHub | Twitter |
-| :- | :- | :- |
-| Christopher Wallis | [@notoriousb1t](https://github.com/notoriousb1t) | [@notoriousb1t](https://twitter.com/notoriousb1t) |
-| Stephen Shaw | [@shshaw](https://github.com/shshaw) | [@shshaw](https://twitter.com/shshaw) |
-
-## License
-
-scroll-out is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+### MAIN
+ 버튼, 캐러셀, 레이아웃 등을 활용한 메인 페이지
+### INTRODUCE
+#### About
+#### History
+#### People
+ 다양한 html, js, css 효과를 활용한 소개 페이지
+### FAQ
+ 챗봇을 활용하여 질문에 답하도록 만듦
+### REVIEW
+ 유튜브 링크 연결, 카드 섞는 애니메이션(html, js, css)을 활용한 리뷰 페이지
+### APPLY
+ 지원 정보를 담은 페이지
+### LET'S PLAY : 몰캠에서 살아남기 게임
+ https://jhchoi0303.github.io/MadCamp3/index.html#
+ 미연시 게임을 모티브로 하고, 카이스트를 배경으로 한 게임
