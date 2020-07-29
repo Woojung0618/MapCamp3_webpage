@@ -1,6 +1,12 @@
+@font-face {
+    font-family: "fontjs"; 
+	src: url("../font/fontjs1.ttf"); 
+	
+}
 html, body
 {
 	height: 100%;
+	font-family: "font1";
 }
 
 body
@@ -18,12 +24,14 @@ h1, h2, h3
 {
 	margin: 0;
 	padding: 0;
+	font-family: "fontjs"; 
 }
 
 
 p
 {
 	margin-top: 0;
+	
 }
 
 ol, ul
@@ -75,3 +83,4 @@ a:hover
     
     background-color: #220d49fa;
 }
+

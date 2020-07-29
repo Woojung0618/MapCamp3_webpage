@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
-
+@font-face {
+    font-family: "fonta"; 
+    src: url("../font/font1.TTF"); 
+}
+p.timeline__content-desc{
+    font-family: "fonta"; 
+}
 .timeline {
   display: flex;
   margin: 0 auto;

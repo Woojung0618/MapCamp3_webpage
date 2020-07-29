@@ -1,4 +1,8 @@
 
+@font-face{
+	font-family: "font1";
+	src: url("../font/font1.TTF"); 
+}
 .container2 {
     position: absolute;
     
