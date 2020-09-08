@@ -1,12 +1,11 @@
 @font-face {
     font-family: "fontjs"; 
 	src: url("../font/fontjs1.ttf"); 
-	
 }
+
 html, body
 {
 	height: 100%;
-	font-family: "font1";
 }
 
 body

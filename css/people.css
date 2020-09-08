@@ -3,16 +3,36 @@
 	font-family: "font1";
 	src: url("../font/font1.TTF"); 
 }
+.container1 {
+	position: absolute;
+	width:100%;
+	height: 70px;
+	padding: 3em 0;
+}
+
+.container1 p {
+	font-size: 20px;
+	font-family: "font1";
+	height: 130px ; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.container1 strong {
+	font-size:30px;
+}
+
 .container2 {
     position: absolute;
-    
 	width: 100%;
-	height: 80%;
+	height:100%;
 }
 
 body {
 	overflow-y: scroll;
-	background: #34495e;
+	background: #fff;
 }
 
 .splitlayout {
@@ -25,10 +45,10 @@ body {
 /* Intro sides */
 .side {
 	position: absolute;
-	top: 0;
-	z-index: 100;
+	top: 20%;
+	z-index: 2;
 	width: 50%;
-	height: 100%;
+	height: 80%;
 	text-align: center;
 	-webkit-backface-visibility: hidden;
 }
@@ -59,7 +79,7 @@ body {
 
 .side-left {
 	left: 0;
-	background: rgb(227,233,246);
+	background: #fff;
 	background: linear-gradient(0deg, rgba(227,233,246,1) 0%, rgba(145,175,212,1) 100%);
 	color:#000;
 	outline: 0px; /* avoid gap */
@@ -67,8 +87,8 @@ body {
 
 .side-right {
 	right: 0;
-	background: rgb(220,203,224);
-background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 100%);
+	background: #fff;
+	background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 100%);
 	color: #fff;
 	outline: 0px solid #fff; /* avoid gap */
 }
@@ -90,13 +110,11 @@ background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 10
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	;
 }
 
 .profile img {
 	max-width: 100%;
 	border-radius: 50%;
-	
 }
 
 .intro-content h1 > span {
@@ -124,7 +142,7 @@ background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 10
 	left: 25%;
 	width: 50%;
 	height: 2px;
-	background: #fff;
+	background: rgb(0, 0, 0);
 	content: '';
 }
 
@@ -133,15 +151,15 @@ background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 10
 }
 
 .back {
-	position: fixed;
-	top: 2.6em;
+	position: absolute;
+	top: 0em;
 	z-index: 500;
 	display: block;
 	visibility: hidden;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	color: #fff;
+	color: rgba(0, 0, 0, 0.788);
 	text-align: center;
 	font-size: 22px;
 	line-height: 44px;
@@ -155,17 +173,17 @@ background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 10
 
 .back-left {
     left: 12.5%;
-    margin-top: 10em;
+    margin-top: 3em;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 
 .back-right {
     right: 12.5%;
-    margin-top: 10em;
+    margin-top: 3em;
 	-webkit-transform: translateX(50%);
 	transform: translateX(50%);
-	color: #fff;
+	color: rgba(0, 0, 0, 0.788);
 }
 
 .open-right .back-left,
@@ -178,7 +196,7 @@ background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 10
 }
 
 .back:hover {
-	color: #ddd;
+	color: rgba(0, 0, 0, 0.788);
 }
 
 /* Pages */
@@ -195,29 +213,29 @@ background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 10
 
 .page-right {
 	left: 25%;
-	outline: 5px solid #ecf0f1; /* avoid rounding gaps */
-	background: #ecf0f1;
-	color: #97a8b2;
+	outline: 5px solid #fff; /* avoid rounding gaps */
+	background: #fff;
+	color: #86749e;
 	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
 }
 
 .splitlayout.open-right {
-	background: #ecf0f1;
+	background: #fff;
 }
 
 .page-left {
 	left: 0;
-	outline: 5px solid #34495e; /* avoid rounding gaps */
-	background: #34495e;
-	color: #fff;
+	outline: 5px solid #fff; /* avoid rounding gaps */
+	background: #fff;
+	color: rgb(101, 125, 170);
 	text-align: right;
 	-webkit-transform: translateX(-100%);
 	transform: translateX(-100%);
 }
 
 .splitlayout.open-left {
-	background: #34495e;
+	background: #fff;
 }
 
 /* Inner page content */
@@ -226,7 +244,7 @@ background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 10
 }
 
 .page-inner section {
-    padding-top:3em;
+    padding-top:5em;
     padding-bottom: 1em;
     line-height: 300%;
 }
@@ -258,6 +276,7 @@ background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 10
 .intro-content {
 	-webkit-transition: -webkit-transform 0.6s, top 0.6s;
 	transition: transform 0.6s, top 0.6s;
+	cursor: url(../images/mouse.png),auto;
 }
 
 .intro-content h1,
@@ -445,198 +464,14 @@ background: linear-gradient(0deg, rgba(220,203,224,1) 0%, rgba(155,124,189,1) 10
 @media screen and (max-width: 320px) {
 	body { font-size: 70%; }
 }
-/**********************************************/
-/* General Blueprint Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@font-face {
-	font-family: 'bpicons';
-	src:url('../fonts/bpicons/bpicons.eot');
-	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/bpicons/bpicons.woff') format('woff'),
-		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
-		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
-	font-weight: normal;
-	font-style: normal;
-} /* Made with http://icomoon.io/ */
-
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
-
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
-
-body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #fff;
-    background: #34495e;
-}
 
 a {
-	color: #ccc;
+	color: #fff;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #000;
 }
-
-.codropsheader {
-	width: 100%;
-	margin: 0 auto;
-	text-align: left;
-	padding: 1.4em;
-	opacity: 0.7;
-	visibility: visible;
-	-webkit-transition: opacity 0.3s;
-	transition: opacity 0.3s;
-}
-
-.codropsheader h1 {
-	font-size: 2.125em;
-	line-height: 1.3;
-	margin: 0 0 0.6em 0;
-	float: left;
-	font-weight: 400;
-}
-
-.codropsheader > span {
-	display: block;
-	position: relative;
-	z-index: 9999;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	padding: 0 0 0.6em 0.1em;
-}
-
-.codropsheader > span span:after {
-	width: 30px;
-	height: 30px;
-	left: -12px;
-	font-size: 50%;
-	top: -8px;
-	font-size: 75%;
-	position: relative;
-}
-
-.codropsheader > span span:hover:before {
-	content: attr(data-content);
-	text-transform: none;
-	text-indent: 0;
-	letter-spacing: 0;
-	font-weight: 300;
-	font-size: 110%;
-	padding: 0.8em 1em;
-	line-height: 1.2;
-	text-align: left;
-	left: auto;
-	margin-left: 4px;
-	position: absolute;
-	color: #47a3da;
-	background: #fff;
-}
-
-.codropsheader nav {
-	float: left;
-	text-align: center;
-	margin-left: 1.5em;
-	display: block;
-}
-
-.codropsheader nav a {
-	display: inline-block;
-	position: relative;
-	text-align: left;
-	width: 2.5em;
-	height: 2.5em;
-	background: #47a3da;
-	border-radius: 50%;
-	margin: 0 0.1em;
-	border: 3px solid #fff;
-}
-
-.codropsheader nav a > span {
-	display: none;
-}
-
-.codropsheader nav a:hover:before {
-	content: attr(data-info);
-	color: #fff;
-	position: absolute;
-	width: 600%;
-	top: 120%;
-	text-align: right;
-	right: 0;
-	pointer-events: none;
-}
-
-.codropsheader nav a:hover {
-	background: #fff;
-}
-
-.bp-icon:after {
-	font-family: 'bpicons';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	text-align: center;
-	color: #fff;
-	-webkit-font-smoothing: antialiased;
-}
-
-.codropsheader nav .bp-icon:after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	line-height: 2;
-	text-indent: 0;
-}
-
-
-.bp-icon-next:after {
-	content: "\e000";
-}
-.bp-icon-drop:after {
-	content: "\e001";
-}
-.bp-icon-archive:after {
-	content: "\e002";
-}
-.bp-icon-about:after {
-	content: "\e003";
-}
-.bp-icon-prev:after {
-	content: "\e004";
-}
-
-
-@media screen and (max-width: 73.375em) {
-	.codropsheader {
-		text-align: center;
-	}
-	.codropsheader h1,
-	.codropsheader nav,
-	.demos {
-		float: none;
-		margin: 0 auto;
-		padding: 0.15em 0;
-	}
-	.codropsheader > span {
-		padding: 0;
-	}
-	.codropsheader > span span:after {
-		display: none;
-	}
-}
-
-@media screen and (max-height: 30.25em) {
-	.codropsheader nav { display: none; }
-}
-
 
 
