@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-
+@font-face {
+  font-family: "font1"; 
+  src: url("../font/font1.TTF"); 
+}
 #menubar {
   color: rgb(152, 130, 177);
+  font-family: "font1"; 
 }
 #main-menu {
   display: flex;
