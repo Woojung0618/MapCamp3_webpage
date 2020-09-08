@@ -116,3 +116,8 @@
 .ch-item:hover .ch-info p {
   opacity: 1;
 }
+
+.card a{
+  color: #000;
+  text-decoration:none;
+}
